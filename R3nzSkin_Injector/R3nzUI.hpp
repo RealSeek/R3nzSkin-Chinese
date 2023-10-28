@@ -53,30 +53,30 @@ namespace R3nzSkinInjector {
 		void updateScreen() {
 			while (true) {
 				if (clientState) {
-					this->label4->Text = L"Found";
+					this->label4->Text = L"找到进程";
 					this->label4->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 				}
 				else {
-					this->label4->Text = L"Not Found";
+					this->label4->Text = L"未找到进程";
 					this->label4->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				}
 
 				if (gameState) {
-					this->label3->Text = L"Found";
+					this->label3->Text = L"找到进程";
 					this->label3->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 					if (cheatState) {
-						this->label2->Text = L"Injected";
+						this->label2->Text = L"已注入";
 						this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 					}
 					else {
-						this->label2->Text = L"Not Injected";
+						this->label2->Text = L"未注入";
 						this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 					}
 				}
 				else {
-					this->label3->Text = L"Not Found";
+					this->label3->Text = L"未找到进程";
 					this->label3->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
-					this->label2->Text = L"Not Injected";
+					this->label2->Text = L"未注入";
 					this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				}
 				Thread::Sleep(1000);
@@ -173,7 +173,7 @@ namespace R3nzSkinInjector {
 			   this->button1->Name = L"button1";
 			   this->button1->Size = System::Drawing::Size(250, 50);
 			   this->button1->TabIndex = 0;
-			   this->button1->Text = L"Start";
+			   this->button1->Text = L"()(),启动";
 			   this->button1->UseVisualStyleBackColor = false;
 			   this->button1->Click += gcnew System::EventHandler(this, &R3nzUI::button1_Click);
 			   // 
@@ -187,7 +187,7 @@ namespace R3nzSkinInjector {
 			   this->label1->Name = L"label1";
 			   this->label1->Size = System::Drawing::Size(68, 18);
 			   this->label1->TabIndex = 1;
-			   this->label1->Text = L"Stopped";
+			   this->label1->Text = L"()(),关闭";
 			   // 
 			   // label2
 			   // 
@@ -199,7 +199,7 @@ namespace R3nzSkinInjector {
 			   this->label2->Name = L"label2";
 			   this->label2->Size = System::Drawing::Size(94, 18);
 			   this->label2->TabIndex = 2;
-			   this->label2->Text = L"Not Injected";
+			   this->label2->Text = L"未注入";
 			   // 
 			   // label3
 			   // 
@@ -211,7 +211,7 @@ namespace R3nzSkinInjector {
 			   this->label3->Name = L"label3";
 			   this->label3->Size = System::Drawing::Size(82, 18);
 			   this->label3->TabIndex = 3;
-			   this->label3->Text = L"Not Found";
+			   this->label3->Text = L"未找到进程";
 			   // 
 			   // groupBox1
 			   // 
@@ -224,7 +224,7 @@ namespace R3nzSkinInjector {
 			   this->groupBox1->Size = System::Drawing::Size(250, 45);
 			   this->groupBox1->TabIndex = 5;
 			   this->groupBox1->TabStop = false;
-			   this->groupBox1->Text = L"Injector Status";
+			   this->groupBox1->Text = L"注入状态";
 			   // 
 			   // groupBox2
 			   // 
@@ -237,7 +237,7 @@ namespace R3nzSkinInjector {
 			   this->groupBox2->Size = System::Drawing::Size(250, 45);
 			   this->groupBox2->TabIndex = 7;
 			   this->groupBox2->TabStop = false;
-			   this->groupBox2->Text = L"LeagueClient Status";
+			   this->groupBox2->Text = L"英雄联盟客户端状态";
 			   // 
 			   // label4
 			   // 
@@ -249,7 +249,7 @@ namespace R3nzSkinInjector {
 			   this->label4->Name = L"label4";
 			   this->label4->Size = System::Drawing::Size(82, 18);
 			   this->label4->TabIndex = 0;
-			   this->label4->Text = L"Not Found";
+			   this->label4->Text = L"未找到进程";
 			   // 
 			   // groupBox3
 			   // 
@@ -262,7 +262,7 @@ namespace R3nzSkinInjector {
 			   this->groupBox3->Size = System::Drawing::Size(250, 45);
 			   this->groupBox3->TabIndex = 8;
 			   this->groupBox3->TabStop = false;
-			   this->groupBox3->Text = L"LeagueGame Status";
+			   this->groupBox3->Text = L"英雄联盟游戏进程";
 			   // 
 			   // groupBox4
 			   // 
@@ -275,7 +275,7 @@ namespace R3nzSkinInjector {
 			   this->groupBox4->Size = System::Drawing::Size(250, 45);
 			   this->groupBox4->TabIndex = 9;
 			   this->groupBox4->TabStop = false;
-			   this->groupBox4->Text = L"R3nzSkin Status";
+			   this->groupBox4->Text = L"换肤器状态";
 			   // 
 			   // linkLabel1
 			   // 
@@ -288,7 +288,7 @@ namespace R3nzSkinInjector {
 			   this->linkLabel1->Size = System::Drawing::Size(207, 14);
 			   this->linkLabel1->TabIndex = 11;
 			   this->linkLabel1->TabStop = true;
-			   this->linkLabel1->Text = L"Copyright (c) 2021-2023 R3nzTheCodeGOD";
+			   this->linkLabel1->Text = L"Copyright (c) 2021-2023 RealSeek";
 			   this->linkLabel1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			   this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &R3nzUI::linkLabel1_LinkClicked);
 			   //
@@ -299,15 +299,15 @@ namespace R3nzSkinInjector {
 			   // menuItem
 			   //
 			   this->menuItem2->Index = 0;
-			   this->menuItem2->Text = L"Start";
+			   this->menuItem2->Text = L"启动换肤";
 			   this->menuItem2->Click += gcnew System::EventHandler(this, &R3nzUI::menuItem2_OnClick);
 			   this->menuItem->Index = 1;
-			   this->menuItem->Text = L"Exit";
+			   this->menuItem->Text = L"退出";
 			   this->menuItem->Click += gcnew System::EventHandler(this, &R3nzUI::menuItem_OnClick);
 			   //
 			   // notifyIcon
 			   //
-			   this->notifyIcon->Text = L"R3nzSkin";
+			   this->notifyIcon->Text = L"原神";
 			   this->notifyIcon->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			   this->notifyIcon->Visible = false;
 			   this->notifyIcon->ContextMenu = this->contextMenu;
@@ -315,8 +315,8 @@ namespace R3nzSkinInjector {
 			   //
 			   // menuStrip
 			   //
-			   this->toolstripmenuItem->Text = L"Preferences";
-			   this->toolstripmenuItem2->Text = L"Hide to tray";
+			   this->toolstripmenuItem->Text = L"偏好设置";
+			   this->toolstripmenuItem2->Text = L"隐藏到托盘";
 			   this->toolstripmenuItem2->Click += gcnew System::EventHandler(this, &R3nzUI::toolstripmenuItem2_OnClick);
 			   this->toolstripmenuItem->DropDownItems->Add(this->toolstripmenuItem2);
 			   this->menuStrip->Items->Add(this->toolstripmenuItem);
@@ -376,21 +376,21 @@ namespace R3nzSkinInjector {
 			if (btnState) {
 				this->button1->BackColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 				this->label1->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
-				this->button1->Text = L"Stop";
-				this->label1->Text = L"Working";
-				this->menuItem2->Text = L"Stop";
+				this->button1->Text = L"停止";
+				this->label1->Text = L"工作中";
+				this->menuItem2->Text = L"停止";
 			} else {
 				this->button1->BackColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				this->label1->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
-				this->button1->Text = L"Start";
-				this->label1->Text = L"Stopped";
-				this->menuItem2->Text = L"Start";
+				this->button1->Text = L"启动";
+				this->label1->Text = L"停止";
+				this->menuItem2->Text = L"启动";
 			}
 		}
 	private:
 		System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
 		{
-			System::Diagnostics::Process::Start(L"https://github.com/R3nzTheCodeGOD/R3nzSkin");
+			System::Diagnostics::Process::Start(L"https://github.com/RealSeek/R3nzSkin-Chinese");
 		}
 	private:
 		System::Void R3nzUI_Resize(System::Object^ sender, System::EventArgs^ e)
